@@ -1,7 +1,3 @@
 class ApplicationController < ActionController::API
-
-    # def authenticate
-    #     if request.headers["Authorization"]
-    #         begin
-    # end 
+    skip_before_action :verify_authenticity_token
 end
