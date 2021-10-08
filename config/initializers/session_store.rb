@@ -1,5 +1,4 @@
-if Rails.env == "production"
-    Rails.application.config.session_store :cookie_store, key: "_wot_backend", domain: "jdh-wot-backend-api.herokuapp.com"
+if Rails.env === "production"
+    Rails.application.config.session_store :cookie_store, key: 'wot-backend', domain: 'wot-backend-json-api'
 else
-    Rails.application.config.session_store :cookie_store, key: "_wot_backend"
-end
+    Rails.application.config.session_store :cookie_store, key: '_wot-backend'
