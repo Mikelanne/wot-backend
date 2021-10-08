@@ -28,6 +28,7 @@ class SessionsController < ApplicationController
                 logged_in: false,
                 message: 'please try again'
             }
+        end
     end
 
     def destroy

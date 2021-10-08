@@ -9,7 +9,7 @@ class UsersController < ApplicationController
       @user = User.new(user_params)
       if @user.save
          login!
-         render json: UserSerializer.new(user)
+         render json: UserSerializer.new(@user)
       else
          render json: {status: 500}
       end
